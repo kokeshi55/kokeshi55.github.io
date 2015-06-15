@@ -1,0 +1,434 @@
+@charset "UTF-8"
+/*基本ページここから*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5;
+	background-color: #f5f5dc;
+	color: #0f0600;
+	font-size: 87.5%;
+	line-height: 1.5;
+}
+a {
+	color: #342300;
+}
+a:hover {
+	color: #a24100;
+}
+header, nav, #breadcrumb, #contents, footer {
+	margin: 0 auto 0 auto;
+	width: 840px;
+}
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	background: url(../images/title02_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:12px 10px 12px 25px;
+	color:#0f0600;
+	font-weight:bold;
+}
+header h1 {
+	background: url(../images/bg09_02.gif);
+	height: 50px;
+	margin: 0 0 26px 0;
+	padding-top: 28px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+header h1 a {
+		text-decoration: none;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0 0 5px 0;
+	padding-left: 0;
+	overflow: hidden;
+	height: 45px;
+}
+nav ul li {
+	width: 210px;
+	float: left;
+}
+nav ul li a {
+	display: block;
+	height: 0;
+	padding-top: 44px;
+	overflow: hidden;
+}
+
+
+nav ul li#nav_course a,
+nav ul li#nav_schedule a,
+nav ul li#nav_point a,
+nav ul li#nav_access a {
+	height: 44px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	background: rgb(216,109,153);
+	color: #f3f2e9;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	line-height: 3;
+}
+nav ul li a:hover,
+#course #nav_course a,
+#schedule #nav_schedule a,
+#point #nav_point a,
+#access #nav_access a {
+	opacity: 0.7;
+	color: #000000;
+}
+#breadcrumb ul {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 5px; 
+	margin-bottom: 0;
+}
+#breadcrumb ul li {
+	display: inline;
+	margin-right: 5px;
+}
+#breadcrumb ul li a {
+	padding-right: 15px;
+	background-image: url(../images/breadcrumb_arrow.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#contents {
+	overflow: hidden;
+}
+#side {
+	float: left;
+	width: 170px;
+	margin-top: 70px;
+}
+
+#main {
+	float: right;
+	width: 660px;
+}
+/*footer {
+	padding-top: 70px;
+}*/
+
+#pagetop a {
+	float: right;
+	display: block;
+	min-height: 16px;
+	padding: 6px 0 6px 28px;
+	margin-bottom: 5px;
+	background-image: url(../images/bg_arrow.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+address {
+	padding-top: 15px;
+	clear: both;
+	background-image: url(../images/bg_footer.png);
+	background-repeat: no-repeat;
+	font-style: normal;
+	text-align: center;
+}
+#copyright {
+	margin-bottom: 15px;
+	margin-top: 0; 
+	text-align: center;
+}
+#copyright small {
+	font-size: 100%;
+}
+
+#sitemap {
+	background: url(../images/title07_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 155px 70px;
+	padding:12px 10px 12px 20px;
+	color:#666666;
+	font-weight:bold;
+}
+
+#main h1 {
+	height: 30px;
+	background: url(../images/title02_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 9px 10px 9px 30px;
+	color:#666666;
+	font-weight:bold;
+	font-size: 156.25%;
+	margin-top: 0px; 
+}
+
+dl dd {
+	margin-left: 5px;
+}
+.bnr_inner p a {
+	text-decoration: none;
+}
+.bnr_inner a img:hover {
+	opacity: 0.8;
+}
+#main h2 {
+	height: 15px;
+	background: url(../images/title02_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 9px 10px 15px 30px;
+	color:#666666;
+	font-weight:bold;
+	font-size: 100%;
+	margin-top: 0px; 
+}
+/*基本ページここまで*/
+
+/*indexページここから*/
+#graphic {
+	width: 840px;
+	height: 400px;
+	margin: 0 auto 15px auto;
+}
+#graphic ul {
+	list-style: none;
+	padding-left: 0;
+}
+#graphic ul li {
+	display: none;
+	position: absolute;
+}
+#graphic ul li.now {
+	display: block;
+}
+#graphic ul li img {
+	width: 837px;
+	height: 400px;
+}
+
+#news ul {
+	padding-left: 0;
+}
+#news ul li {
+	font-size: 85%;
+	padding:20px 0 20px 175px;
+	border-bottom: 1px dotted #6c5f45;
+	color: #342300;
+	text-indent: -175px;
+}
+#news ul li time {
+	display: inline-block;
+	width: 175px;
+	font-weight: bold;
+	text-indent: 0;
+}
+/*indexページここまで*/
+
+/*コースページここから*/
+#course section {
+	padding-left: 20px;
+}
+#course #main section p:first-child {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+#course #main ul{
+		padding-left: 17px;
+		margin-top: 12px;
+		margin-bottom: 5px;
+}
+#course .each_course {
+	height:24px;
+	margin:0px 0px 5px 0px;
+	padding:8px 0px 8px 22px;
+	font-size:16px;font-weight:bold;color:#444444;
+	background-image:url(../images/head015_08.png);
+	background-position:bottom;background-repeat:repeat-x;
+}
+#course #qualification p:nth-child(2){
+	width: 138px;
+	margin:8px 0px 5px 0px;
+	padding:2px 2px 2px 10px;
+	font-size: 16px;
+	border: dotted 2px #444444;
+}
+#course #qualification p:nth-child(4),#course #qualification p:nth-child(6) {
+	margin-top: 2px;
+	margin-bottom: 17px;
+}
+#course .detail {
+	background-image:url(../images/point020_08.png);
+	background-repeat: no-repeat;
+	background-position:left;
+	margin:0px 0px 0px 17px;
+	padding:4px 0px 4px 22px;
+}
+#course #qualification p:nth-child(2),#course #qualification p:nth-child(3),#course #qualification p:nth-child(4),#course #qualification p:nth-child(5),#course #qualification p:nth-child(6) {
+	margin-left: 17px;
+}
+#program ul {
+	margin-bottom: 0;
+}
+/*コースページここまで*/
+
+/*スケジュールページここから*/
+#schedule #main p {
+	margin: 0 0 5px 15px;
+	width: 660px;
+	text-align: left;
+	font-size: 90%;
+}
+#schedule #main table {
+	width: 500px;
+/*	border-collapse: collapse;*/
+	margin: 20px 80px 20px 80px;
+	border:1px solid #333;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	border-spacing: 0;
+}
+#schedule #main table caption {
+	margin-bottom: 12px;
+}
+#schedule #main table tr, table th, table td {
+	border: 1px solid #6c5f45;
+}
+#schedule #main .event {
+	width: 80px;
+	height: 80px;
+}
+#schedule #main #week th {
+	text-align: center;
+	vertical-align:middle;
+}
+#schedule #main .event th {
+	width: 70px;
+}
+#schedule #main .event td {
+	padding-left: 9px;
+	font-size: 80%;
+	font-weight: bold;
+	color: #222;
+}
+/*スケジュールページここまで*/
+
+/*操作のつぼページここから*/
+#point section {
+	padding-left: 20px;
+}
+#point #main section p:first-child {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+/*#point #main ul{
+		padding-left: 17px;
+		margin-top: 12px;
+		margin-bottom: 5px;
+}*/
+#point .each_point {
+	height:24px;
+	margin:0px 0px 5px 0px;
+	padding:8px 0px 8px 22px;
+	font-size:16px;font-weight:bold;color:#444444;
+	background-image:url(../images/head015_08.png);
+	background-position:bottom;background-repeat:repeat-x;
+}
+#point .ques h4 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+#point.ques p:nth-child(2), .ques p:nth-child(3), .ques p:nth-child(4),  .ques p:nth-child(5) ,.ques p:last-child {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 1em;
+}
+.ques p:last-child {
+	margin-bottom: 30px;
+}
+/*操作のつぼページここまで*/
+
+/*アクセスページここから*/
+#map-canvas {
+	height: 300px;
+}
+#access section {
+	padding-left: 20px;
+}
+#access .each_school {
+	height:24px;
+	margin:0px 0px 5px 0px;
+	padding:8px 0px 8px 22px;
+	font-size:16px;font-weight:bold;color:#444444;
+	background-image:url(../images/head015_08.png);
+	background-position:bottom;background-repeat:repeat-x;
+}
+#access #main #school p {
+	margin-bottom: 0;
+}
+#school p:nth-child(2), #school p:nth-child(3), #school p:nth-child(4), #school p:nth-child(5) {
+	padding-left: 1em;
+}
+/*アクセスページここまで*/
+
+/*資料請求ページここから*/
+#request p:first-child {
+	margin-left: 2em;
+}
+#request article ul {
+	list-style-type: square; 
+	margin-left: 1em;
+}
+#request form {
+	width: 600px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#request form table {
+	width: 600px;
+	border-collapse: collapse;
+	font-size: 90%;
+}
+#request form table th {
+	text-align: center;
+	padding: 10px;
+	color: #333;
+	background-color: #f0f0f0;
+	font-weight: normal;
+}
+#request form table td {
+	padding: 1em;
+} 
+#request form input[type="text"] ,form input[type="email"], form input[type="tel"], select {
+	margin-left: 0.5em;
+	margin-bottom: 5px;
+	width: 12em;
+	height: 1.3em;
+}
+.attention {
+	color: #f00;
+	font-size: 80%;
+}
+#request form textarea {
+	width: 453px;
+	height: 300px;
+	margin-top: 0.7em;
+}
+#request form input[type="submit"]{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	width: 150px;
+	height: 30px;
+	font-size: 100%;
+}
+#request form p:last-child {
+	text-align: center;
+}
+/*資料請求ページここまで*/
