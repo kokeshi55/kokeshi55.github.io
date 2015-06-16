@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>西日本新聞パソコン教室 天神校　-アクセス</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		function initialize() {
+		  var myLatlng = new google.maps.LatLng(33.588858, 130.400826);
+		  var mapOptions = {
+		    zoom: 15,
+		    center: myLatlng
+		  }
+		  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body id="access">
+	<header id="top">
+		<h1><a href="index.html">西日本新聞パソコン教室 天神校</a></h1>
+	</header>
+	<nav>
+		<ul>
+			<li id="nav_course"><a href="course.html">コース一覧</a></li>
+			<li id="nav_schedule"><a href="schedule.html">スケジュール</a></li>
+			<li id="nav_point"><a href="point.html">操作のツボ</a></li>
+			<li id="nav_access"><a href="access.html">アクセス</a></li>
+		</ul>
+	</nav>
+	<div id="breadcrumb">
+		<ul>
+			<li><a href="index.html">ホーム</a></li>
+			<li>アクセス</li>
+		</ul>
+		
+	</div>
+	<div id="contents">
+		<div id="side">
+			<aside>
+				<div class="bnr_inner">
+					<a href="request.html">
+					<dl>
+						<dt><img src="images/button05_seikyu_03.jpg" alt="資料請求"></dt>
+						<dd>お気軽に資料請求ください。</dd>
+					</dl>
+					</a>
+				</div>
+				<!-- <div class="bnr_inner">
+					<p id="sitemap"><a href="sitemap.html">サイトマップ</a></p>
+				</div> -->
+			</aside>
+			
+		</div>
+
+		<div id="main">
+			<h1>アクセス</h1>
+			<section id="school">
+				<p class="each_school">天神校</p>
+				<p>福岡市中央区天神1-4-1　西日本新聞会館16F</p>
+				<p>（西鉄 福岡駅及び地下鉄 天神・天神南駅より徒歩1分）</p>
+				<p>※大丸からは昇れませんのでご注意下さい</p>
+				<p>Tel：092-739-3200</p>
+				<p id="map-canvas"></p>
+			</section>
+		</div>
+	</div>
+
+	<footer>
+		<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+		<address>福岡県福岡市中央区天神1-4-1-16F 電話：092-739-3200　営業時間:10:00～20:00</address>
+		<p id="copyright"><small>Copyright &copy;西日本新聞パソコン教室 2000-2015 all rights reserved</small></p>
+	</footer>
+</body>
+</html>
